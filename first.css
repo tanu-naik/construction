@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image:url(https://www.studio-photographe.com/wp-content/uploads/2020/06/Chantier_06-2048x1280.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+}
+
+.menu-bar{
+    background: rgb(6, 31, 6);
+    text-align:right;
+    list-style: none;
+    
+
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+}
+
+.menu-bar ul li{
+    width: 150px;
+    margin:15px;
+    padding: 10px;
+    text-align: center;
+}
+.menu-bar ul li a
+{
+
+    text-decoration: none;
+    color:#fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+    background: hsl(204, 70%, 73%);
+    border-radius: 10px;
+}
+
+.menu-bar .fa
+{
+    margin-right: 10px;
+}
+
+.sub-menu-1
+{
+    display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    
+    display:block;
+    position: absolute;
+    background: rgb(209, 239, 209);
+    margin-top:15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+     width: 150px;
+     padding:10px;
+     border-bottom:1px dotted #0f0909;
+     background: transparent;
+     border-radius: 0;
+     text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+     border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+      color:#596934;
+}
+
+.fa-angle-right
+{
+    float: right;
+}
+
+.sub-menu-2
+{
+    display:none;
+}
